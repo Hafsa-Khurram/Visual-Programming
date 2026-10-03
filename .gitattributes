@@ -1,0 +1,2 @@
+# The database script is not counted as a language on GitHub
+*.sql linguist-detectable=false
