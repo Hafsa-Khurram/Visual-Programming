@@ -264,6 +264,7 @@ namespace TravelManager
             }
 
             // Page title: modern font with a gold line under it.
+            Panel titleBar = null;
             Label title = form.Controls.OfType<Label>()
                 .Where(l => !sidebar.Contains(l))
                 .OrderByDescending(l => l.Font.Size)
@@ -282,6 +283,7 @@ namespace TravelManager
                     Location = new Point(center - 32, title.Top + title.PreferredHeight + 2),
                 };
                 form.Controls.Add(bar);
+                titleBar = bar;
             }
 
             // White card behind the input fields and buttons, and another behind the table.
@@ -291,10 +293,22 @@ namespace TravelManager
             var inputs = form.Controls.Cast<Control>()
                 .Where(c => c != sidebar && c != grid && c != bottom && c != exit && c != title && !(c is Panel))
                 .ToList();
-            int minTop = title == null ? 0 : title.Top + title.PreferredHeight + 14;
             Rectangle inputArea = inputs.Count > 0
                 ? inputs.Select(c => c.Bounds).Aggregate(Rectangle.Union)
                 : Rectangle.Empty;
+            int minTop = title == null ? 0 : title.Top + title.PreferredHeight + 14;
+            if (title != null && inputs.Count > 0 && inputArea.Top - 8 < minTop)
+            {
+                // Fields start close to the title: move the title up so the card does not cut them.
+                int up = Math.Min(minTop - (inputArea.Top - 8), Math.Max(0, title.Top - 6));
+                title.Top -= up;
+                if (titleBar != null)
+                {
+                    titleBar.Top -= up;
+                }
+                minTop -= up;
+            }
+            minTop = Math.Min(minTop, inputArea.Top - 6);
 
             if (grid != null)
             {
