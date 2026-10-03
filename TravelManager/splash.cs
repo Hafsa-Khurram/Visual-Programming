@@ -17,6 +17,7 @@ namespace TravelManager
         {
             InitializeComponent();
             InitializeBackgroundWorker();
+            Theme.Apply(this);
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)

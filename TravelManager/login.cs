@@ -18,6 +18,7 @@ namespace TravelManager
             PasswordtextBox.PasswordChar = '*';
             NametextBox.MaxLength = 50;
             AcceptButton = loginbutton; // Enter key logs in
+            Theme.Apply(this);
         }
 
         private void exit_Click(object sender, EventArgs e)

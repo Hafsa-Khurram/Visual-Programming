@@ -15,6 +15,7 @@ namespace TravelManager
         public main()
         {
             InitializeComponent();
+            Theme.Apply(this);
         }
 
         private void exit_Click(object sender, EventArgs e)

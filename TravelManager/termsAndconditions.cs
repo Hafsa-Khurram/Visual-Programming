@@ -15,6 +15,7 @@ namespace TravelManager
         public termsAndconditions()
         {
             InitializeComponent();
+            Theme.Apply(this);
         }
 
         // Shown on top of the Sign Up screen, so going back just closes it.

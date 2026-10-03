@@ -21,6 +21,7 @@ namespace TravelManager
             PackageName.MaxLength = 255;
             price.MaxLength = 9;
             Description.MaxLength = 255;
+            Theme.Apply(this);
         }
 
         // ---------- Side menu ----------

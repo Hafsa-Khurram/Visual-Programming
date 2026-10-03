@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppHelper.cs" />
+    <Compile Include="Theme.cs" />
     <Compile Include="bookings.cs">
       <SubType>Form</SubType>
     </Compile>

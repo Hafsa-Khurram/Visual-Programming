@@ -16,6 +16,7 @@ namespace TravelManager
         {
             InitializeComponent();
             SetupLists();
+            Theme.Apply(this);
         }
 
         // ---------- Side menu ----------

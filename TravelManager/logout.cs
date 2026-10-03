@@ -16,6 +16,7 @@ namespace TravelManager
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterParent;
+            Theme.Apply(this);
         }
 
         private void exit_Click(object sender, EventArgs e)

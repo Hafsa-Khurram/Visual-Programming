@@ -17,6 +17,7 @@ namespace TravelManager
             InitializeComponent();
             Ui.StyleGrid(dataGridView1);
             SetupLists();
+            Theme.Apply(this);
         }
 
         private void DataGridView()

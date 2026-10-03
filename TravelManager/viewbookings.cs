@@ -19,6 +19,7 @@ namespace TravelManager
             customerName.MaxLength = 50;
             NoOfpeople.MaxLength = 2;
             SetupStatuses();
+            Theme.Apply(this);
         }
 
         private void DataGridView()

@@ -10,6 +10,7 @@ Users sign up and log in, then manage **travel packages**, **bookings** and **pa
 
 ## ✨ Features
 
+- **Modern look**: navy and gold theme, white cards for forms and tables, coloured rounded buttons with hover effects, and the current page highlighted in the side menu
 - **Splash screen** with a loading bar. While it loads, the app connects to SQL Server and creates the database if it is missing.
 - **Sign up / Log in**: input validation, unique user name and email, Terms & Conditions, passwords stored as SHA-256 hashes, and a "Show Password" option
 - **Packages**: add, update and delete packages (name, description, price, duration, destination); click a row to edit it
@@ -65,6 +66,7 @@ TravelManager.sln
 TravelDB.sql                 database script (optional)
 TravelManager/
 ├── AppHelper.cs             database setup, validation, navigation and table styling
+├── Theme.cs                 modern look applied to every screen (fonts, cards, buttons, menu)
 ├── splash / main            loading and welcome screens
 ├── login / signup           accounts (+ termsAndconditions)
 ├── home                     main menu

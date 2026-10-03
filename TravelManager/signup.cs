@@ -21,6 +21,7 @@ namespace TravelManager
             AddresstextBox.MaxLength = 255;
             ContacttextBox.MaxLength = 15;
             AcceptButton = Signupbutton;
+            Theme.Apply(this);
         }
 
         private void Signupbutton_Click(object sender, EventArgs e)
