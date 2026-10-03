@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TravelDB">
+  <DataContextMoniker Name="/TravelDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c15ee30f-edcd-4a8e-8745-599900a90816" absoluteBounds="0.625, 1, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TravelDBDataContext/Booking" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d86b90e5-fb28-4fb6-a0ba-caf293c8db69" absoluteBounds="0.64000000000000012, 1.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="45e3bb22-b7df-436c-925e-ee580b9e3207" absoluteBounds="3.375, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/TravelDBDataContext/Package" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29027315-77a7-4375-ae94-eaed3a71a1dc" absoluteBounds="3.39, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a4deec7b-59e1-4cf6-9424-b7994ba2c678" absoluteBounds="1, 3.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/TravelDBDataContext/Payment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c3cc6c4c-6537-42cf-b409-caf7c4b38f06" absoluteBounds="1.0150000000000001, 4.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0bc4a08f-93fb-4f1b-9a2c-7f26a87fd552" absoluteBounds="3.875, 3.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/TravelDBDataContext/Signup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6733f713-7f7d-4c03-80b7-7a60d3325eaa" absoluteBounds="3.8899999999999997, 4.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
